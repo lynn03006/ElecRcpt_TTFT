@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BankproML xmins="urn:schema-bankpro-com:multichannel">
+   <SignonRq>
+      <SignonPswd>
+         <CustId>
+            <SPName>EAI</SPName>
+            <CustLoginId>EAI</CustLoginId>
+         </CustId>
+         <CustPswd>
+            <CryptType>DES1</CryptType>
+            <Pswd>7BCD33168E062E79</Pswd>
+         </CustPswd>
+      </SignonPswd>
+      <ClientDt>2019/04/15 15:30:20</ClientDt>
+   </SignonRq>
+   <CommMsg>
+      <SPName>EAI</SPName>
+      <MsgId>2040501</MsgId>
+      <RqUID />
+      <T24_DATA>
+		<CUS_NO>1000002737</CUS_NO>
+		<ACCT_NO>22334456789</ACCT_NO>
+		<START_DATE>20190502</START_DATE>
+		<END_DATE>20190509</END_DATE>
+	  </T24_DATA>
+   </CommMsg>
+</BankproML>
