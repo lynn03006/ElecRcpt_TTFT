@@ -1,27 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<BankproML xmins="urn:schema-bankpro-com:multichannel">
-   <SignonRq>
-      <SignonPswd>
-         <CustId>
-            <SPName>EAI</SPName>
-            <CustLoginId>EAI</CustLoginId>
-         </CustId>
-         <CustPswd>
-            <CryptType>DES1</CryptType>
-            <Pswd>7BCD33168E062E79</Pswd>
-         </CustPswd>
-      </SignonPswd>
-      <ClientDt>2019/04/15 15:30:20</ClientDt>
-   </SignonRq>
-   <CommMsg>
-      <SPName>EAI</SPName>
-      <MsgId>2040501</MsgId>
-      <RqUID />
-      <T24_DATA>
-		<CUS_NO>1000002737</CUS_NO>
-		<ACCT_NO>22334456789</ACCT_NO>
-		<START_DATE>20190502</START_DATE>
-		<END_DATE>20190509</END_DATE>
-	  </T24_DATA>
-   </CommMsg>
+<?xml version="1.0"?>
+<BankproML xmlns="urn:schema-bankpro-com:multichannel">
+  <SignonRq>
+    <SignonPswd>
+      <CustId>
+        <SPName>EAI</SPName>
+        <CustLoginId>EAI</CustLoginId>
+      </CustId>
+      <CustPswd>
+        <CryptType>DES1</CryptType>
+        <Pswd>7BCD33168E062E79</Pswd>
+      </CustPswd>
+    </SignonPswd>
+    <ClientDt>2019/04/15 15:30:20</ClientDt>
+  </SignonRq>
+  <CommMsg>
+    <SPName>EAI</SPName>
+    <MsgId>2040501</MsgId>
+    <RqUID></RqUID>
+    <T24_DATA>
+      <T24_EAI>
+        <T24_EAI_HDR>
+          <MSG_SYS_ID></MSG_SYS_ID>
+          <HDR_MD5_DES></HDR_MD5_DES>
+        </T24_EAI_HDR>
+        <T24_EAI_MSG>
+          <REQ_MSG_GRP>
+            <REQ_MSG_OPT>
+              <SIGN_ON_ID></SIGN_ON_ID>
+              <SIGN_ON_PSWD></SIGN_ON_PSWD>
+              <SIGN_ON_BRH>CN0010002</SIGN_ON_BRH>
+              <PROC_FUNC></PROC_FUNC>
+            </REQ_MSG_OPT>
+            <REQ_MSG_DATA>
+              <ACCT_NO op="EQ"></ACCT_NO>
+              <CUS_NO op="EQ">1000002737</CUS_NO>
+              <START_DATE op="EQ">20190502</START_DATE>
+              <END_DATE op="EQ">20200509</END_DATE>
+            </REQ_MSG_DATA>
+          </REQ_MSG_GRP>
+          <REQ_PROC_INFO>
+            <UNQ_REF_ID></UNQ_REF_ID>
+            <REQ_PROC_SYS></REQ_PROC_SYS>
+          </REQ_PROC_INFO>
+        </T24_EAI_MSG>
+      </T24_EAI>
+    </T24_DATA>
+  </CommMsg>
 </BankproML>
